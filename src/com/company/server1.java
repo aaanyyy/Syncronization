@@ -10,7 +10,7 @@ public class server1 {
     final static ReentrantLock thread1Lock = new ReentrantLock();
     final static ReentrantLock thread2Lock = new ReentrantLock();
     private static final List<Integer> integers = new ArrayList<>();
-    static Integer monitor = 1;
+    final static String monitor = "1";
     public static void main(String[] args) throws InterruptedException {
 
         Thread thread1 = new Thread(() -> {
